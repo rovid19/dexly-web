@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark1: #0D0D0D;
+  --color-dark2: #1A1A1A;
+  --color-dark3: #262626;
+  --color-light1: #F2F2F2;
+  --color-light2: #E6E6E6;
+  --color-light3: #999999;
+  --color-accent1: #83BD0F;
+  --color-accent2: #0F49BD;
+  --color-danger: #BD0F12;
+
+  --font-family-sans: "Roboto", sans-serif;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-gradient {
+  background: linear-gradient(270deg, #0F49BD, #83BD0F, #0F49BD, #83BD0F);
+  background-size: 400% 400%;
+  animation: gradientShift 5s ease infinite;
+}
