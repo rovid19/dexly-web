@@ -1,5 +1,3 @@
-import React from "react";
-
 const TermsOfService = () => {
   return (
     <div className="min-h-screen bg-dark1 text-light1 py-12 px-4">

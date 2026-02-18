@@ -1,4 +1,3 @@
-import React from "react";
 import appVideo from "../assets/AppVideo.mp4";
 
 const Video = () => {

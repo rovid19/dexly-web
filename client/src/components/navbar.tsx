@@ -1,6 +1,4 @@
-import React from "react";
 import { logo } from "../icons";
-import { ReactSVG } from "react-svg";
 import FadeIn from "./FadeIn";
 
 const navbar = () => {

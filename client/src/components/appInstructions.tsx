@@ -2,14 +2,12 @@ import FadeIn from "./FadeIn";
 
 interface appInstructionsProps {
   image: string;
-  number: string;
   title: string;
   description: string;
 }
 
 const appInstructions = ({
   image,
-  number,
   title,
   description,
 }: appInstructionsProps) => {

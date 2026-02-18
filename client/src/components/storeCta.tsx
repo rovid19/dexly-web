@@ -1,4 +1,3 @@
-import React from "react";
 import { appleLogo, playStore } from "../icons";
 import FadeIn from "./FadeIn";
 
