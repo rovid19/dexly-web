@@ -11,13 +11,13 @@ import Footer from "./footer";
 
 const home = () => {
   return (
-    <div className="h-full w-full  relative   lg:px-0">
+    <div className="h-full w-full  relative  lg:px-0">
       <Navbar />
       <Hero />
 
       <StoreCta title="Features" />
 
-      <div className="w-full flex flex-col gap-12 lg:gap-4 mb-[100px]">
+      <div className="w-full flex flex-col gap-4 lg:gap-4 mb-[100px]">
         <AppInstructions
           image={firstStep}
           title="Take a photo"

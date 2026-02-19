@@ -13,7 +13,7 @@ const appInstructions = ({
   description,
 }: appInstructionsProps) => {
   return (
-    <div className="h-[650px] w-full flex flex-col lg:flex-row px-4 lg:px-18 mt-[100px] gap-8 lg:gap-0 ">
+    <div className="h-[650px] w-full flex flex-col lg:flex-row px-4 lg:px-18 mt-[100px] gap-4 lg:gap-0 ">
       <FadeIn
         direction="right"
         duration={600}

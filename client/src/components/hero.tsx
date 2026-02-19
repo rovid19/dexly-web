@@ -9,15 +9,12 @@ const hero = () => {
       <div className="h-[700px] w-full flex flex-col md:flex-row relative md:mb-[100px] mb-[300px]">
         <div className="h-full w-full md:w-[40%] z-5">
           <video
+            preload="auto"
             className="w-full lg:h-[700px] md:h-[500px] h-[500px] object-contain"
             autoPlay
             muted
             loop
             playsInline
-            onLoadedMetadata={(e) => {
-              const video = e.currentTarget;
-              console.log("currentSrc:", video.currentSrc);
-            }}
           >
             {/* Safari (HEVC with alpha) */}
             <source src={safariPromo} type='video/mp4; codecs="hvc1"' />
