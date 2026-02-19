@@ -1,4 +1,3 @@
-import heroBg from "../assets/hero.png";
 import appPromo from "../assets/test.webm";
 import { appleLogo, playStore } from "../icons";
 import FadeIn from "./FadeIn";

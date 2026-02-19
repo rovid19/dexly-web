@@ -1,6 +1,4 @@
-import { appleLogo, playStore, logo } from "../icons";
 import FadeIn from "./FadeIn";
-import Ani from "./ani";
 
 interface storeCtaProps {
   title: string;
