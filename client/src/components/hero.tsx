@@ -1,7 +1,7 @@
 import appPromo from "../assets/test.webm";
 import { appleLogo, playStore } from "../icons";
 import FadeIn from "./FadeIn";
-import safariPromo from "../assets/test-hevc-alpha.mov";
+import safariPromo from "../assets/applePromo.mov";
 
 const hero = () => {
   return (
@@ -14,6 +14,10 @@ const hero = () => {
             muted
             loop
             playsInline
+            onLoadedMetadata={(e) => {
+              const video = e.currentTarget;
+              console.log("currentSrc:", video.currentSrc);
+            }}
           >
             {/* Safari (HEVC with alpha) */}
             <source src={safariPromo} type='video/mp4; codecs="hvc1"' />
