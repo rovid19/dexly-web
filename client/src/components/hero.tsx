@@ -1,6 +1,7 @@
 import appPromo from "../assets/test.webm";
 import { appleLogo, playStore } from "../icons";
 import FadeIn from "./FadeIn";
+import safariPromo from "../assets/test-hevc-alpha.mov";
 
 const hero = () => {
   return (
@@ -8,13 +9,18 @@ const hero = () => {
       <div className="h-[700px] w-full flex flex-col md:flex-row relative md:mb-[100px] mb-[300px]">
         <div className="h-full w-full md:w-[40%] z-5">
           <video
-            src={appPromo}
-            className="w-full lg:h-[700px] md:h-[500px] h-[500px] object-contain  "
+            className="w-full lg:h-[700px] md:h-[500px] h-[500px] object-contain"
             autoPlay
             muted
             loop
             playsInline
-          />
+          >
+            {/* Safari (HEVC with alpha) */}
+            <source src={safariPromo} type='video/mp4; codecs="hvc1"' />
+
+            {/* Chrome / Edge / Firefox (VP9 with alpha) */}
+            <source src={appPromo} type="video/webm" />
+          </video>
         </div>
         <div className="h-full w-full md:w-[60%] flex items-center justify-center md:pr-8  ">
           <div className="relative p-6 rounded-l-3xl overflow-hidden flex flex-col items-center md:items-end justify-center ">

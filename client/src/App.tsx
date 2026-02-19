@@ -5,7 +5,7 @@ import PrivacyPolicy from "./components/privacyPolicy";
 
 const App = () => {
   return (
-    <div className="w-screen min-h-screen bg-dark1">
+    <div className="w-full min-h-screen bg-dark1 overflow-x-hidden">
       <div className="max-w-7xl mx-auto bg-dark1">
         <Routes>
           <Route path="/" element={<Home />} />
