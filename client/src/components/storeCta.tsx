@@ -8,7 +8,7 @@ const storeCta = ({ title }: storeCtaProps) => {
   return (
     <FadeIn direction="up" duration={600}>
       <div className="w-full flex justify-center px-4">
-        <div className="animated-gradient h-[300px] w-full flex relative z-2 rounded-3xl items-center justify-center gap-4">
+        <div className="animated-gradient h-[150px] lg:h-[300px] w-full flex relative z-2 rounded-3xl items-center justify-center gap-4">
           <div>
             <h1 className="text-light1  text-4xl lg:text-7xl font-bold">
               {title}

@@ -6,7 +6,7 @@ import safariPromo from "../assets/applePromo.mov";
 const hero = () => {
   return (
     <>
-      <div className="h-[700px] w-full flex flex-col md:flex-row relative md:mb-[100px] mb-[300px]">
+      <div className="h-[700px] w-full flex flex-col md:flex-row relative md:mb-[100px] mb-[250px]">
         <div className="h-full w-full md:w-[40%] z-5">
           <video
             preload="auto"
@@ -38,18 +38,21 @@ const hero = () => {
 
                 <div className="flex md:flex-row flex-col gap-4">
                   <button className="flex items-center gap-4 bg-dark2 p-4 md:p-8 rounded-3xl cursor-pointer transition-all duration-300 ease-out hover:scale-105 hover:shadow-[0_8px_32px_rgba(0,0,0,0.45)] hover:brightness-110 active:scale-100 active:shadow-none active:brightness-100">
-                    <div dangerouslySetInnerHTML={{ __html: appleLogo }} />
+                    <div
+                      className="w-8 h-8 lg:w-12 lg:h-12 [&>svg]:w-full [&>svg]:h-full"
+                      dangerouslySetInnerHTML={{ __html: appleLogo }}
+                    />
                     <div className="flex flex-col items-start">
                       <h3 className="text-light1 text-base md:text-lg lg:text-2xl font-sans">
-                        Download on the{" "}
-                      </h3>
-                      <h3 className="text-light1 text-base md:text-lg lg:text-2xl">
-                        App Store
+                        Download
                       </h3>
                     </div>
                   </button>
                   <button className="flex items-center gap-4 border-4 border-dark2 p-4 md:p-8 rounded-3xl relative">
-                    <div dangerouslySetInnerHTML={{ __html: playStore }} />
+                    <div
+                      className="w-8 h-8 lg:w-12 lg:h-12 [&>svg]:w-full [&>svg]:h-full"
+                      dangerouslySetInnerHTML={{ __html: playStore }}
+                    />
                     <div className="flex flex-col items-start">
                       <h3 className="text-light1 text-base md:text-lg lg:text-2xl">
                         COMING SOON
