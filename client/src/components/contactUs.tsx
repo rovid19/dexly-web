@@ -133,7 +133,7 @@ const contactUs = () => {
               className="flex flex-col gap-5"
               noValidate
             >
-              <div className="flex gap-5">
+              <div className="flex flex-col lg:flex-row gap-5">
                 <div className="flex flex-col gap-1 flex-1">
                   <label className="text-sm text-light2 font-medium">
                     First name

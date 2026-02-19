@@ -23,5 +23,5 @@
 .animated-gradient {
   background: linear-gradient(270deg, #0F49BD, #83BD0F, #0F49BD, #83BD0F);
   background-size: 400% 400%;
-  animation: gradientShift 5s ease infinite;
+  animation: gradientShift 7s ease infinite;
 }

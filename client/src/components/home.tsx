@@ -11,20 +11,31 @@ import Footer from "./footer";
 
 const home = () => {
   return (
-    <div className="h-full w-full bg-dark1 relative ">
+    <div className="h-full w-full  relative   lg:px-0">
       <Navbar />
       <Hero />
-      <StoreCta />
-      <div className="w-full mt-[100px] flex flex-col gap-4 mb-[100px]">
+
+      <StoreCta title="Features" />
+
+      <div className="w-full flex flex-col gap-12 lg:gap-4 mb-[100px]">
         <AppInstructions
           image={firstStep}
           title="Take a photo"
-          description="Capture a clear photo of any item you want to sell. The app handles the rest — no manual research, no guesswork."
+          description={
+            <>
+              Capture a clear photo of any item you want to sell. The app
+              handles the rest — no manual research, no guesswork.
+            </>
+          }
         />
 
         <AppInstructions
           image={secondStep}
-          title="AI Identifies the Item & Market Value"
+          title={
+            <>
+              AI Identifies the Item <br /> & Market Value
+            </>
+          }
           description="Our AI analyzes the image, identifies the exact product, and instantly pulls live marketplace data to estimate realistic resale value based on current demand."
         />
 
@@ -36,12 +47,12 @@ const home = () => {
 
         <AppInstructions
           image={fourthStep}
-          title="Track Your Inventory & Profit"
+          title={<>Track Your Inventory</>}
           description="Every scanned item is automatically added to your inventory dashboard, where you can monitor active listings, track sales performance, and analyze profit over time."
         />
       </div>
 
-      <StoreCta />
+      <StoreCta title="Support" />
 
       <ContactUs />
       <Footer />
